@@ -43,8 +43,6 @@
 
    > 这个界面的设计目的是确保数据库安全：root 账户用于系统级管理，而普通用户账户用于日常应用访问，避免直接使用 root 操作带来的风险。
 
-   密码：`zjy1234` 
-
 4. 对 windows 的服务配置
 
    ![mysql系统服务配置](./MySQL.assets/mysql系统服务配置.png)
@@ -189,7 +187,7 @@ from sqlalchemy import create_engine
 engine = create_engine('数据库类型+工具（python包）://用户名:密码@IP地址:端口号/数据库名称?charset=码表')
 
 # 比如
-engine = create_engine('mysql+pymysql://root:zjy1234@127.0.0.1:3306/day04?charset=utf8')
+engine = create_engine('mysql+pymysql://root:123456@127.0.0.1:3306/day04?charset=utf8')
 ```
 
 # DataGrip 配置
